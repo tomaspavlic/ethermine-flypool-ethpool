@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 15.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topdev.Crypto.Pools.Generic", "Topdev.Crypto.Pools.Generic\Topdev.Crypto.Pools.Generic.csproj", "{4FB95759-B71C-4054-A025-B926DBD7B45A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topdev.Crypto.Pools.Generic.Tests", "Topdev.Crypto.Pools.Generic.Tests\Topdev.Crypto.Pools.Generic.Tests.csproj", "{3D5CF854-4290-45FC-9F64-381DD261D253}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB95759-B71C-4054-A025-B926DBD7B45A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB95759-B71C-4054-A025-B926DBD7B45A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB95759-B71C-4054-A025-B926DBD7B45A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB95759-B71C-4054-A025-B926DBD7B45A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Debug|x64.ActiveCfg = Debug|x64
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Debug|x64.Build.0 = Debug|x64
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Debug|x86.ActiveCfg = Debug|x86
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Debug|x86.Build.0 = Debug|x86
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|x64.ActiveCfg = Release|x64
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|x64.Build.0 = Release|x64
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|x86.ActiveCfg = Release|x86
+		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
