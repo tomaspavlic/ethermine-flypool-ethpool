@@ -9,10 +9,20 @@ namespace Topdev.Crypto.Pools.Generic
     public abstract class GenericPoolApi
     {
         private readonly ApiWebClient _apiClient;
+        private readonly Pool _pool;
 
         protected GenericPoolApi(string endpoint)
         {
             _apiClient = new ApiWebClient(endpoint);
+            _pool = new Pool(_apiClient);
+        }
+
+        public Pool Pool
+        {
+            get
+            {
+                return _pool;
+            }
         }
 
         public Miner GetMiner(string miner)

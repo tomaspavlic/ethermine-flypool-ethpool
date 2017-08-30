@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Topdev.Crypto.Pools.Generic.Helpers;
+﻿using System.Threading.Tasks;
 
 namespace Topdev.Crypto.Pools.Generic.Models
 {
@@ -23,20 +21,47 @@ namespace Topdev.Crypto.Pools.Generic.Models
             _miner = miner;
         }
 
-        public async Task<MinerHistory[]> GetHistoryAsync() => await _client.GetDataAsync<MinerHistory[]>($"/miner/{_miner}/history");
+		/// <summary>
+		/// Array of the miner statistic entries sorted by time ASC.
+		/// </summary>
+		public async Task<MinerHistory[]> GetHistoryAsync() => await _client.GetDataAsync<MinerHistory[]>($"/miner/{_miner}/history");
 
-        public async Task<Payout[]> GetPayoutsAsync() => await _client.GetDataAsync<Payout[]>($"/miner/{_miner}/payouts");
+		/// <summary>
+		/// Array of payouts sorted by date DESC, limited to the last 100 entries.
+		/// </summary>
+		public async Task<Payout[]> GetPayoutsAsync() => await _client.GetDataAsync<Payout[]>($"/miner/{_miner}/payouts");
 
-        public async Task<Round[]> GetRoundsAsync() => await _client.GetDataAsync<Round[]>($"/miner/{_miner}/rounds");
+		/// <summary>
+		/// Array of rounds sorted by block number DESC, limited to the last 1000 rounds.
+		/// </summary>
+		public async Task<Round[]> GetRoundsAsync() => await _client.GetDataAsync<Round[]>($"/miner/{_miner}/rounds");
 
+        /// <summary>
+        /// Miner settings
+        /// </summary>
         public async Task<Settings> GetSettingsAsync() => await _client.GetDataAsync<Settings>($"/miner/{_miner}/settings");
 
+        /// <summary>
+        /// Miner Statistics.
+        /// </summary>
+        /// <returns>The statistics async.</returns>
         public async Task<MinerStatistics> GetStatisticsAsync() => await _client.GetDataAsync<MinerStatistics>($"/miner/{_miner}/currentStats");
 
-        public async Task<Worker[]> GetWorkersAsync() => await _client.GetDataAsync<Worker[]>($"/miner/{_miner}/workers");
+		/// <summary>
+		/// Array of the worker statistic entries sorted by name ASC.
+		/// </summary>
+		public async Task<Worker[]> GetWorkersAsync() => await _client.GetDataAsync<Worker[]>($"/miner/{_miner}/workers");
 
-        public async Task<WorkerHistory[]> GetWorkerHistoryAsync(string workerName) => await _client.GetDataAsync<WorkerHistory[]>($"/miner/{_miner}/worker/{workerName}/history");
+		/// <summary>
+		/// Array of the worker statistic entries sorted by date ASC.
+		/// </summary>
+		/// <param name="workerName">Worker name.</param>
+		public async Task<WorkerHistory[]> GetWorkerHistoryAsync(string workerName) => await _client.GetDataAsync<WorkerHistory[]>($"/miner/{_miner}/worker/{workerName}/history");
 
-        public async Task<WorkerStatistics> GetWorkerCurrentStatisticsAsync(string workerName) => await _client.GetDataAsync<WorkerStatistics>($"/miner/{_miner}/worker/{workerName}/currentStats");
+		/// <summary>
+		/// Individual worker statistics.
+		/// </summary>
+		/// <param name="workerName">Worker name.</param>
+		public async Task<WorkerStatistics> GetWorkerCurrentStatisticsAsync(string workerName) => await _client.GetDataAsync<WorkerStatistics>($"/miner/{_miner}/worker/{workerName}/currentStats");
     }
 }

@@ -1,24 +1,16 @@
 ﻿using System;
-using System.Runtime.Serialization;
+using Newtonsoft.Json;
+using Topdev.Crypto.Pools.Generic.Helpers;
 
 namespace Topdev.Crypto.Pools.Generic.Models
 {
     public class WorkerStatistics : WorkerHistory
     {
-		[DataMember(Name = "lastSeen")]
-		private int LastSeenInternal
-		{
-			set
-			{
-                LastSeen = DateTimeOffset.FromUnixTimeSeconds(value).DateTime;
-			}
-		}
-
 		/// <summary>
 		/// Gets the last seen.
 		/// </summary>
 		/// <value>Timestamp of when the worker was last seen by the pool.</value>
-		[IgnoreDataMember]
-		public DateTime LastSeen { get; private set; }
+		[JsonProperty(PropertyName = "lastSeen"), JsonConverter(typeof(UnixTimeConverter))]
+		public DateTime LastSeen { get; set; }
     }
 }

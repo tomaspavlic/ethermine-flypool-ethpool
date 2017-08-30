@@ -1,18 +1,9 @@
-﻿using System;
-namespace Topdev.Crypto.Pools.Generic.Models
+﻿namespace Topdev.Crypto.Pools.Generic.Models
 {
     public class Response<T>
     {
-        public string Status
-        {
-            get;
-            set;
-        }
+        public string Status { get; set; }
 
-        public T Data
-        {
-            get;
-            set;
-        }
+        public T Data { get; set; }
     }
 }
