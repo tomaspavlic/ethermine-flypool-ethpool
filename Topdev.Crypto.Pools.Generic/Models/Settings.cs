@@ -8,11 +8,31 @@ namespace Topdev.Crypto.Pools.Generic.Models
     [DataContract]
     public class Settings
     {
-        [DataMember(Name = "email")]
+		/// <summary>
+		/// Gets or sets the email.
+		/// </summary>
+		/// <value>Masked Email address of the miner.</value>
+		[DataMember(Name = "email")]
         public string Email { get; set; }
-        [DataMember(Name = "monitor"), JsonConverter(typeof(BoolConverter))]
+
+		/// <summary>
+		/// Gets or sets a value indicating whether this <see cref="T:Topdev.Crypto.Pools.Generic.Models.Settings"/> is monitor.
+		/// </summary>
+		/// <value>Monitoring enabled</value>
+		[DataMember(Name = "monitor"), JsonConverter(typeof(BoolConverter))]
         public bool Monitor { get; set; }
-        [DataMember(Name = "minPayout")]
+
+		/// <summary>
+		/// Gets or sets the minimal payout.
+		/// </summary>
+		/// <value>Minimum payout amount defined by the miner in base units.</value>
+		[DataMember(Name = "minPayout")]
         public long MinimalPayout { get; set; }
+
+		/// <summary>
+		/// Gets or sets the ip.
+		/// </summary>
+		/// <value>Masked IP address of one randomly selected worker.</value>
+		public string Ip { get; set; }
     }
 }

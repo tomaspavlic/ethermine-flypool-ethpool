@@ -2,6 +2,8 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Topdev.Crypto.Pools.Generic.Helpers;
 using Topdev.Crypto.Pools.Generic.Models;
 
 namespace Topdev.Crypto.Pools.Generic
@@ -17,7 +19,7 @@ namespace Topdev.Crypto.Pools.Generic
             _httpClient = new HttpClient();
         }
 
-		public async Task<T> GetDateAsync<T>(string methodUrl)
+		public async Task<T> GetDataAsync<T>(string methodUrl)
 		{
             var response = await _httpClient.GetStringAsync(_endpoint + methodUrl);
 
