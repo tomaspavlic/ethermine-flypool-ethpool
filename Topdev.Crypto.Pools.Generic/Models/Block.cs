@@ -6,11 +6,11 @@ namespace Topdev.Crypto.Pools.Generic.Models
 {
     public class Block
     {
-		/// <summary>
-		/// Gets or sets the number.
-		/// </summary>
-		/// <value>Block number.</value>
-		[JsonProperty(PropertyName = "number")]
+        /// <summary>
+        /// Gets or sets the number.
+        /// </summary>
+        /// <value>Block number.</value>
+        [JsonProperty(PropertyName = "number")]
         public long Number { get; set; }
 
         /// <summary>
@@ -20,11 +20,11 @@ namespace Topdev.Crypto.Pools.Generic.Models
         [JsonProperty(PropertyName = "miner")]
         public string Miner { get; set; }
 
-		/// <summary>
-		/// Gets or sets the time.
-		/// </summary>
-		/// <value>Mined on.</value>
-		[JsonProperty(PropertyName = "time"), JsonConverter(typeof(UnixTimeConverter))]
+        /// <summary>
+        /// Gets or sets the time.
+        /// </summary>
+        /// <value>Mined on.</value>
+        [JsonProperty(PropertyName = "time"), JsonConverter(typeof(UnixTimeConverter))]
         public DateTime Time { get; set; }
     }
 }

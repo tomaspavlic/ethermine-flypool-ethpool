@@ -19,8 +19,8 @@ namespace Topdev.Crypto.Pools.Generic
             _httpClient = new HttpClient();
         }
 
-		public async Task<T> GetDataAsync<T>(string methodUrl)
-		{
+        public async Task<T> GetDataAsync<T>(string methodUrl)
+        {
             var response = await _httpClient.GetStringAsync(_endpoint + methodUrl);
 
             if (response.Contains("NO DATA"))
@@ -29,7 +29,7 @@ namespace Topdev.Crypto.Pools.Generic
             var deserializedObject = await DeserializeObjectAsync<Response<T>>(response);
 
             return deserializedObject.Data;
-		}
+        }
 
         private Task<T> DeserializeObjectAsync<T>(string value)
         {

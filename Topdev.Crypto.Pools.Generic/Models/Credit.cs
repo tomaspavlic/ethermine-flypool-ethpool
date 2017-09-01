@@ -12,18 +12,18 @@ namespace Topdev.Crypto.Pools.Generic.Models
         [JsonProperty(PropertyName = "miner")]
         public string Miner { get; set; }
 
-		/// <summary>
-		/// Gets or sets the hashrate.
-		/// </summary>
-		/// <value>Current hashrate in H/s.</value>
-		[JsonProperty(PropertyName = "hashrate")]
+        /// <summary>
+        /// Gets or sets the hashrate.
+        /// </summary>
+        /// <value>Current hashrate in H/s.</value>
+        [JsonProperty(PropertyName = "hashrate")]
         public long Hashrate { get; set; }
 
-		/// <summary>
-		/// Gets or sets the credit.
-		/// </summary>
-		/// <value>Credit of the miner.</value>
-		[JsonProperty(PropertyName = "credit")]
+        /// <summary>
+        /// Gets or sets the credit.
+        /// </summary>
+        /// <value>Credit of the miner.</value>
+        [JsonProperty(PropertyName = "credit")]
         public long Credits { get; set; }
     }
 }
