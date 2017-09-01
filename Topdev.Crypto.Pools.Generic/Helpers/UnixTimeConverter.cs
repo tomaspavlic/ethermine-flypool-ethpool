@@ -17,7 +17,8 @@ namespace Topdev.Crypto.Pools.Generic.Helpers
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            throw new NotImplementedException();
+            var datetimeOffset = new DateTimeOffset((DateTime)value);
+            serializer.Serialize(writer, datetimeOffset.ToUnixTimeSeconds());
         }
     }
 }
