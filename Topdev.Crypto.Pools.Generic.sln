@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topdev.Crypto.Pools.Generic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topdev.Crypto.Pools.Generic.Tests", "Topdev.Crypto.Pools.Generic.Tests\Topdev.Crypto.Pools.Generic.Tests.csproj", "{3D5CF854-4290-45FC-9F64-381DD261D253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topdev.Crypto.Pools.Generic.Example", "Topdev.Crypto.Pools.Generic.Example\Topdev.Crypto.Pools.Generic.Example.csproj", "{2A305CEE-4440-44C9-84A8-EFF222097DFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,17 @@ Global
 		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|x64.Build.0 = Release|x64
 		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|x86.ActiveCfg = Release|x86
 		{3D5CF854-4290-45FC-9F64-381DD261D253}.Release|x86.Build.0 = Release|x86
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Debug|x64.ActiveCfg = Debug|x64
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Debug|x64.Build.0 = Debug|x64
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Debug|x86.ActiveCfg = Debug|x86
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Debug|x86.Build.0 = Debug|x86
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Release|x64.ActiveCfg = Release|x64
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Release|x64.Build.0 = Release|x64
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Release|x86.ActiveCfg = Release|x86
+		{2A305CEE-4440-44C9-84A8-EFF222097DFB}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
