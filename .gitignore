@@ -30,3 +30,6 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+
+# Tests
+Topdev.Crypto.Pools.Generic.Tests/*
