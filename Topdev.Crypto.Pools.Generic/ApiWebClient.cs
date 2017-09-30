@@ -24,7 +24,7 @@ namespace Topdev.Crypto.Pools.Generic
             var response = await _httpClient.GetStringAsync(_endpoint + methodUrl);
 
             if (response.Contains("NO DATA"))
-                return (T)Activator.CreateInstance(typeof(T));
+                return default(T);
 
             var deserializedObject = await DeserializeObjectAsync<Response<T>>(response);
 
