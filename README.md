@@ -1,6 +1,6 @@
 # Generic pool API client for Ethpool, Ethermine & Flypool
 
-[![Build status](https://img.shields.io/travis/tomaspavlic/generic-pool-api-client.svg)](https://github.com/tomaspavlic/ethermine-flypool-ethpool)
+[![Build status](https://img.shields.io/travis/tomaspavlic/generic-pool-api-client.svg)](https://github.com/tomaspavlic/generic-pool-api-client)
 
 Supported on the .NET Standard 1.3 (https://docs.microsoft.com/en-us/dotnet/articles/standard/library) compatible .NET runtimes: .NET Core, .NET Framework 4.6, Universal Windows Platform, Xamarin.
 
