@@ -35,7 +35,10 @@ namespace Topdev.Crypto.Pools.Generic
         {
             return Task.Factory.StartNew(() =>
             {
-                return JsonConvert.DeserializeObject<T>(value);
+                return JsonConvert.DeserializeObject<T>(value, 
+                    new JsonSerializerSettings{
+                        NullValueHandling = NullValueHandling.Ignore
+                    });
             });
         }
     }
